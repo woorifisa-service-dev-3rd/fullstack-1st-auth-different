@@ -1,0 +1,15 @@
+#spring.application.name=resource-server
+
+server:
+  port: 8090
+
+spring:
+  application:
+    name: resource-server
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer_uri: http://localhost:8080/realms/my-first-demo
+
+
